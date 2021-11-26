@@ -11,18 +11,20 @@ composer update
 
 ## Configuración base de datos
 
-Ingresamos a la carpeta ecommerce-php-main ubicada en C:\laragon\www, realizamos un copia del archivo .env.example y la copia la nombramos .env
+- Ingresamos a la carpeta ecommerce-php-main ubicada en C:\laragon\www, realizamos un copia del archivo .env.example y la copia la nombramos .env
 
-Abrimos el proyecto desde Visual Studio Code e ingresamos al archivo .env para configurar la base de datos
+- Abrimos el proyecto desde Visual Studio Code e ingresamos al archivo .env para configurar la base de datos
 
-Creamos una base de datos desde el cliente que tengamos para realizar BD y de acuerdo a la configuración de la base de datos completamos la siguiente información en el archivo .env
+- Creamos una base de datos desde el cliente que tengamos para realizar BD y de acuerdo a la configuración de la base de datos completamos la siguiente información en el archivo .env
 
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 - Nuevamente en la consola ingresamos el siguiente codigo
 
