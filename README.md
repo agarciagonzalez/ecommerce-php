@@ -35,7 +35,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-En la base de datos se corren el siguiente codigo para crear usuarios administrador: admin@admin.com con contraseña 123456789
+- En la base de datos se corre el siguiente codigo para crear usuarios administrador: admin@admin.com con contraseña 123456789
 
 ```bash
 insert into roles(id, name) values (1, 'ADMIN');
@@ -46,7 +46,7 @@ INSERT INTO users(id, role_id, seller_id, name, email, password, created_at, upd
 VALUES (1, 1, NULL, 'Admin', 'admin@admin.com', '$2y$10$ocpzmNFoHIwNWvY6H3ecue0QoWOOpNxHXZb3qlG6GM/MFXng7KWAi', NULL, NULL);
 ```
 
-En la base de datos se corren el siguiente codigo para insertar datos de las categorias y las marcas:
+- En la base de datos se corre el siguiente codigo para insertar datos de las categorias y las marcas:
 
 ```bash
 INSERT INTO categories(id, name) values (1, 'Calzado');
@@ -67,9 +67,9 @@ INSERT INTO brands(id, name) values (6, 'Samsung');
 INSERT INTO brands(id, name) values (7, 'Trek');
 ```
 
-Se ingresa a la aplicacion con el usuario y la contraseña del administrador y se crean usuarios, seller y productos de prueba
+- Se ingresa a la aplicacion con el usuario y la contraseña del administrador y se crean usuarios, seller y productos de prueba
 
-Se ingresa a la api https://www.postman.com/, para este caso se pueden realizar consultas para los productos y consultas para las ordenes por email, ademas de ingresar ordenes con el siguiente json
+- Se ingresa a la api https://www.postman.com/, para este caso se pueden realizar consultas para los productos y consultas para las ordenes por email, ademas de ingresar ordenes con el siguiente json
 
 ```bash
 {        
@@ -87,7 +87,7 @@ Se ingresa a la api https://www.postman.com/, para este caso se pueden realizar 
 }
 ```
 
-y las siguientes url (Importante que la aplicacion tenga el nombre ecommerce-php-main)
+- y as siguientes url (Importante que la aplicacion tenga el nombre ecommerce-php-main)
 
 - Para ingresar ordenes (POST y estructura JSON)
 http://ecommerce-php-main.test/api/order
